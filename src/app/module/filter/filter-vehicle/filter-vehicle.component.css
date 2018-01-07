@@ -1,0 +1,10 @@
+.car-icon{
+  width:inherit;
+  height: inherit;
+  padding: 5px;
+}
+.filter-vehicle{
+  width: 72px;
+  height: 41px;
+  margin: 5px auto;
+}

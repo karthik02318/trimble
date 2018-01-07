@@ -1,0 +1,49 @@
+.vehicle-list-header, .vehicle-list-view-header {
+  background-color: #00a89b;
+  color: white;
+}
+
+.vehicle-list-view-header {
+  height: 30px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.vehicle-list-header {
+  height: 30px;
+  padding: 5px;
+}
+
+.vehicle-list-table {
+  padding: 20px;
+}
+
+.list-text {
+  color: #797a7a;
+}
+
+.splitter {
+  border-top: 1px solid #080808 !important;
+  margin: 0px !important;
+}
+
+.vehicle-list-car-icon {
+  width: 30px;
+  height: 17px;
+}
+
+.vehicle-list-view-car-icon {
+  padding-top: 60px;
+}
+
+.padding40 {
+  padding: 10px 40px;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.border-view {
+  border: 2px solid #00a89b;
+}

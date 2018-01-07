@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center" *ngFor="let filter of filters">
+      <app-filter-vehicle [filter]="filter" (selectedFilter)="onFilterSelected(filter)"
+      ></app-filter-vehicle>
+    </div>
+  </div>
+</div>
+

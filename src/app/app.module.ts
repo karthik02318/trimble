@@ -1,18 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
 
-
-import { AppComponent } from './app.component';
-
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {AppComponent} from './app.component';
+import {AppRoutingModule} from './app.routing';
+import {fakeBackendProvider} from '../fakebackend/fake-backend';
+import {$http} from './util/HttpService';
+import {DealershipService} from './services/dealership.service';
+import {BaseRequestOptions, ConnectionBackend, Http, HttpModule, RequestOptions} from '@angular/http';
+import {MockBackend} from '@angular/http/testing';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, AppRoutingModule, HttpModule
   ],
-  providers: [],
+  providers: [fakeBackendProvider,
+    MockBackend,
+    BaseRequestOptions, $http, DealershipService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
