@@ -1,0 +1,12 @@
+
+.vehicle-list-view-header {
+  height: 30px;
+  padding: 5px;
+  font-weight: bold;
+  background-color: #00a89b;
+  color: white;
+}
+
+.border-view {
+  border: 2px solid #00a89b;
+}

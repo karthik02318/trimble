@@ -1,0 +1,219 @@
+<div class="container border-view list-text padding40" *ngIf="vehicle"  [@fadeListAnimation]>
+  <div class="row">
+    <div class="col-xs-12 vehicle-list-view-header">
+      <span>dfsd</span>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-12 vehicle-detail-view-car-icon text-center">
+            <img [src]='"../../../../assets/images/"+vehicle.imagePath+".jpg"' alt="car" class="vehicle-list-car-icon">
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Sap ID:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.sapID}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Legacy ID:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.legacyID}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Make:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.make}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Model:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.model}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Year:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.year}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Last Reported:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.lastReported}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Service Due:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10">{{vehicle.serviceDue}}
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Transmission:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.transmission}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Odo Meter:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.odoMeter}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>GPS ID:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10">{{vehicle.gpsId}}
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Number Plate:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.numberPlate}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Oil Level:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.oilLevel}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>vehicle Owner:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10">{{vehicle.vehicleOwner}}
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Last Trip:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.lastTrip}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Tier Pressure Level:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.tierPressureLevel}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>No. Drivers:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10">{{vehicle.noDrivers}}
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Fuel Cost:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.fuelCost}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Ideal Hours:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.idealHours}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Charge Per Hour:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10">{{vehicle.chargePerHour}}
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Number Plate:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.numberPlate}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Used Hours:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.usedHours}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Parking Garage:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10">{{vehicle.parkingGarage}}
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>laborCost:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.laborCost}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div class="col-xs-6 padding10"><span><strong>Renewal:</strong></span>
+          </div>
+          <div class="col-xs-6 padding10"><span>{{vehicle.renewal}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
