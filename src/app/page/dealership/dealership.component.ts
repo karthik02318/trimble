@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {DealershipService} from '../../services/dealership.service';
 import {Ivehicle} from '../../interfaces/vehicle.interface';
+import {Ifilter} from '../../interfaces/filter.interface';
+import {slideInOutAnimation} from '../../animation/fade-list.animation';
 
 @Component({
   selector: 'app-dealership',
@@ -8,7 +10,8 @@ import {Ivehicle} from '../../interfaces/vehicle.interface';
   styleUrls: ['./dealership.component.css']
 })
 export class DealershipComponent implements OnInit {
-  vehiclesList:Array<Ivehicle>;
+  vehiclesList: Array<Ivehicle>;
+  filter: Ifilter = null;
 
   constructor(private dealershipService: DealershipService) {
   }
@@ -21,4 +24,7 @@ export class DealershipComponent implements OnInit {
       });
   }
 
+  getFilter(data: Ifilter) {
+    this.filter = data;
+  }
 }

@@ -9,13 +9,14 @@ import {$http} from './util/HttpService';
 import {DealershipService} from './services/dealership.service';
 import {BaseRequestOptions, ConnectionBackend, Http, HttpModule, RequestOptions} from '@angular/http';
 import {MockBackend} from '@angular/http/testing';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule, HttpModule
+    BrowserModule, AppRoutingModule, HttpModule,BrowserAnimationsModule
   ],
   providers: [fakeBackendProvider,
     MockBackend,

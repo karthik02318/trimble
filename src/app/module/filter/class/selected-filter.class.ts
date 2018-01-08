@@ -7,7 +7,6 @@ import {Ifilter} from '../../../interfaces/filter.interface';
 export class SelectedFilterComponent {
   @Output() selectedFilter: EventEmitter<Ifilter> = new EventEmitter<Ifilter>();
   onFilterSelected(data:Ifilter){
-    console.log(data);
     this.selectedFilter.emit(data);
   }
 }

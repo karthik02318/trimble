@@ -3,3 +3,6 @@ body{
   background-color: #eaeaea !important;
   font-family: Arial !important;
 }
+.padding10 {
+  padding: 10px;
+}

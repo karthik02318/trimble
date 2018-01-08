@@ -1,5 +1,5 @@
 export interface Ifilter{
-  FilterName:string;
-  FilterTypeId:number;
-  FilterColor:string;
+  filterName:string;
+  filterTypeId:number;
+  filterColor:string;
 }

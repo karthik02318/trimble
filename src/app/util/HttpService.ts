@@ -15,7 +15,7 @@ export class $http {
   }
 
   get(apiURL: string, data: any) {
-    data.gdt = Date.now();
+    //data.gdt = Date.now();
     let queryString = this.convertToJsonToParam(data);
     return this.http.get(apiURL + '?' + queryString);
   }

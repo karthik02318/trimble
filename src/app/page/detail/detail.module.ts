@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { DetailRoutingModule } from './detail-routing.module';
 import { DetailComponent } from './detail.component';
+import {DetailViewModule} from '../../module/detail-view/detail-view.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    DetailRoutingModule
+    DetailRoutingModule,
+    DetailViewModule
   ],
   declarations: [DetailComponent]
 })

@@ -28,21 +28,19 @@
 }
 
 .vehicle-list-car-icon {
-  width: 30px;
-  height: 17px;
+  width: 100px;
+  height: 30px;
 }
 
-.vehicle-list-view-car-icon {
-  padding-top: 60px;
+.vehicle-detail-view-car-icon {
+  padding-top: 30px;
 }
 
 .padding40 {
   padding: 10px 40px;
 }
 
-.padding10 {
-  padding: 10px;
-}
+
 
 .border-view {
   border: 2px solid #00a89b;

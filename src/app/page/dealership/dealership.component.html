@@ -1,4 +1,4 @@
-<app-filter></app-filter>
+<app-filter (selectedFilter)="getFilter($event)"></app-filter>
 <br/>
 <br/>
 <div class="container">
@@ -6,4 +6,4 @@
     <div style="height: 30px"></div>
   </div>
 </div>
-<app-vehiclelist [vehiclesList]="vehiclesList"></app-vehiclelist>
+<app-vehiclelist [filterType]="filter" [vehiclesList]="vehiclesList"></app-vehiclelist>

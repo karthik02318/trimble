@@ -30,4 +30,14 @@ export class DealershipService {
         return response.json();
       });
   }
+  /**
+   * This service method has no arguments, It returns all the vehicle list
+   * @returns {Observable<any>}
+   */
+  getVehicleById(vehicleID) {
+    return this.http.get(API.VEHICLEBYID,{id:vehicleID})
+      .map((response: Response) => {
+        return response.json();
+      });
+  }
 }
