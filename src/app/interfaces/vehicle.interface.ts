@@ -1,4 +1,5 @@
 export interface Ivehicle {
+  id:number;
   imagePath:string;
   serialNumber:string;
   vehicleTypeId:number;

@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {DealershipService} from '../../services/dealership.service';
 import {Ivehicle} from '../../interfaces/vehicle.interface';
 import {Ifilter} from '../../interfaces/filter.interface';
-import {slideInOutAnimation} from '../../animation/fade-list.animation';
 
 @Component({
   selector: 'app-dealership',

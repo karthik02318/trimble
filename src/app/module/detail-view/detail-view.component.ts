@@ -15,14 +15,11 @@ export class DetailViewComponent implements OnInit {
   }
 
   vehicle;
-  vehicleID: number;
-  private sub: any;
 
   ngOnInit() {
-    this.sub = this.route.params.subscribe(params => {
-      this.vehicleID = +params['id'];
-      console.log(this.vehicleID, 'this.vehicleID');
-      this.dealershipService.getVehicleById(this.vehicleID).subscribe(
+    this.route.params.subscribe(params => {
+      let vehicleID:number = +params['id'];
+      this.dealershipService.getVehicleById(vehicleID).subscribe(
         vehicle => {
           this.vehicle = vehicle;
         });

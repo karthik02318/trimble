@@ -13,12 +13,12 @@
   <div class="container  hidden-xs vehicle-list-table list-text">
     <div class="row">
       <div class="col-sm-2 col-sm-offset-1 text-center">
-        <img [src]='"../../../../assets/images/"+vehicle.imagePath+".jpg"' alt="car" class="vehicle-list-car-icon">
+        <img [src]='"assets/images/"+vehicle.imagePath+".jpg"' alt="car" class="vehicle-list-car-icon">
       </div>
       <div class="col-sm-2 text-center">
         <span>{{vehicle.serialNumber}}</span>
       </div>
-      <div class="col-sm-2 text-center"><span>{{vehicle.vehicleType}}</span></div>
+      <div class="col-sm-2 text-center "><span class="vehicle-type">{{vehicle.vehicleType}}</span></div>
       <div class="col-sm-2 text-center"><span>{{vehicle.fuelLevel}}%</span></div>
       <div class="col-sm-2 text-right"><span>{{vehicle.distance}}km</span></div>
     </div>
@@ -34,7 +34,7 @@
     <div class="row border-view">
       <div class="col-xs-6">
         <div class="col-xs-12 vehicle-list-view-car-icon text-center">
-          <img [src]='"../../../../assets/images/"+vehicle.imagePath+".jpg"' alt="car" class="vehicle-list-car-icon">
+          <img [src]='"assets/images/"+vehicle.imagePath+".jpg"' alt="car" class="vehicle-list-car-icon">
 
         </div>
         <div class="col-xs-12 text-center">

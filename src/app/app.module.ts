@@ -4,11 +4,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app.routing';
-import {fakeBackendProvider} from '../fakebackend/fake-backend';
-import {$http} from './util/HttpService';
 import {DealershipService} from './services/dealership.service';
-import {BaseRequestOptions, ConnectionBackend, Http, HttpModule, RequestOptions} from '@angular/http';
-import {MockBackend} from '@angular/http/testing';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -16,11 +12,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AppComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule, HttpModule,BrowserAnimationsModule
+    BrowserModule, AppRoutingModule,BrowserAnimationsModule
   ],
-  providers: [fakeBackendProvider,
-    MockBackend,
-    BaseRequestOptions, $http, DealershipService],
+  providers: [ DealershipService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

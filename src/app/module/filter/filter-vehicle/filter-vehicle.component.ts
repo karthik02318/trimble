@@ -8,7 +8,7 @@ import {SelectedFilterComponent} from '../class/selected-filter.class';
   styleUrls: ['./filter-vehicle.component.css']
 })
 export class FilterVehicleComponent extends SelectedFilterComponent implements OnInit {
-  @Input() filter:Ifilter;
+  @Input('filter') filter:Ifilter;
   ngOnInit() {
   }
 }
